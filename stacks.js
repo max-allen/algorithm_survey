@@ -22,7 +22,7 @@ class Stack {
   pop() {
     const node = this.#top
     this.#top = node.previous
-    return node
+    return node.data
   }
 
   peek() {

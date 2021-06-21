@@ -5,6 +5,18 @@
 
 class Queue {
   constructor() {
-    this.items = {}
+    this.data = []
+    this.head = this.tail = 0
+  }
+
+  enqueue(item) {
+    this.data[this.tail++] = item
+  }
+
+  dequeue() {
+    const node = this.data[this.head++]
+    return node
   }
 }
+
+module.exports = Queue
