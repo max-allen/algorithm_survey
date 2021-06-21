@@ -1,7 +1,8 @@
 class Node {
-  constructor(data) {
+  constructor(data, prev, next) {
     this.data = data
-    this.previous = null
+    this.previous = prev || null
+    this.next = next || null
   }
 }
 
