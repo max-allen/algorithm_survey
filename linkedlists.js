@@ -1,5 +1,7 @@
 const Node = require('./Node')
 
+// doubly linked-list
+
 class LinkedList {
   constructor() {
     this.head = this.tail = null
@@ -37,7 +39,7 @@ class LinkedList {
     return node.data
   }
 
-  search(term) {
+  search(term) { // iterative
     let currentNode = this.head
 
     while (currentNode) {
